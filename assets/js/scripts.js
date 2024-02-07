@@ -39,6 +39,8 @@ menuLinks.forEach(item => {
 
 
 
+/*
+
 var words = ['Desarrollador frond-end ','  Soporte TI ','Linux','windows'],
     wordWrapper = document.getElementById('word'),
     wordWrapperContent = wordWrapper.innerHTML,
@@ -75,8 +77,39 @@ setInterval(function(){
     
   }
 
-}, 200);
+}, 200);  */
 
 
+var words = ['Desarrollador front-end', 'Soporte TI', 'Linux', 'Windows'],
+    wordWrapper = document.getElementById('word'),
+    
+    counter = 0;
 
+function animateText() {
+    var currentWord = words[counter];
+    var index = 0;
 
+    // Intervalo de tiempo para agregar caracteres
+    var addInterval = setInterval(function() {
+        if (index < currentWord.length) {
+            wordWrapper.textContent += currentWord[index];
+            index++;
+        } else {
+            clearInterval(addInterval);
+            // Intervalo de tiempo para eliminar caracteres
+            setTimeout(function() {
+                var removeInterval = setInterval(function() {
+                    if (wordWrapper.textContent.length > 0) {
+                        wordWrapper.textContent = wordWrapper.textContent.slice(0, -1);
+                    } else {
+                        clearInterval(removeInterval);
+                        counter = (counter + 1) % words.length; 
+                        setTimeout(animateText, 200); 
+                    }
+                }, 50); 
+            }, 1000); 
+        }
+    }, 50);
+}
+
+animateText(); 

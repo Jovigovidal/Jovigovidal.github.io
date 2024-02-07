@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <header class="header">
+  <header id="barra" class="header">
     <nav class="header__nav">
       <ul class="menu menu--principal">
         <li class="menu__item">
@@ -46,6 +46,7 @@
       
     </div>
   </header>
+
   <nav class="nav--mobile">
     <ul class="menu menu--mobile">
       <li class="menu__item">
@@ -63,7 +64,7 @@
       <li class="menu__item">
         <a class="menu__link" href="#sobre">
           <i class="menu__icon bi bi-person"></i>
-          <span class="menu__text">SOBRE</span>
+          <span class="menu__text">SOBRE MI</span>
         </a>
       </li>
       <li class="menu__item">
@@ -76,22 +77,16 @@
   </nav>
 
   <main id="home">
-
-
-
-    
     <div class="main__content1">
       
       <h2 ><b></b></h2>
-      <h1 ><b>Jose Vidal</b></h1>
-      
-
+      <h1  ><b id="principal2">Jose Vidal</b></h1>
       <span class="word" id="word"></span>
         
       
       <ul class="menu menu--social">
         <li>
-          <a class="menu__link" href="https://josevidalg.github.io/" target="_blank">
+          <a class="menu__link" href="https://github.com/Jovigovidal" target="_blank">
             <i class="menu__icon bi bi-github"></i>
           </a>
         </li>
@@ -101,57 +96,73 @@
           </a>
         </li>
        
-      </ul>
-
-
-
+        <li>
+          <a class="menu__link" href="https://wa.me/967872814" target="_blank">
+            <i class="menu__icon bi bi-whatsapp"></i>
+          </a>
+        </li>
 
       
-      <a href="#projetos">
-        <button class="btn btn--primary">
-          <span>proyectos</span>
-          <i class="bi bi-arrow-down-right"></i>
-        </button>  
-      </a>
-    </div>
-    
+      </ul>
+
+      
+     
+
+      
+
   </main>
-
+    <br>
   <section class="technologies">
-    <h2 id="principal2">HABILIDADES</h2>
-
-
-
-
-    
+    <h2 id="principal2">HABILIDADES</h2><br>
     <ul class="technologies__list">
-      <li class="">
+      <li id="barra02">
         <img width="96" height="96" src="https://img.icons8.com/color/96/git.png" alt="git"/>
       </li>
-      <li class="">
-        <img width="96" height="96" src="https://img.icons8.com/color/96/html-5--v1.png" alt="html-5--v1"/>
+      <li id="barra06">
+        <img width="96" height="96" src="https://img.icons8.com/fluency/96/windows-10.png" alt="git"/>
       </li>
-      <li class="">
+      <li id="barra03">
+        <img width="96" height="96" src="https://img.icons8.com/color/96/html-5--v1.png"  alt="html-5--v1"/>
+      </li>
+      <li id="barra04">
         <img width="96" height="96" src="https://img.icons8.com/color-glass/96/bootstrap.png" alt="bootstrap"/>
       </li>
-      <li class="">
-        <img width="96" height="96" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-ubuntu-is-a-free-and-open-source-linux-distribution-logo-color-tal-revivo.png" alt="external-ubuntu-is-a-free-and-open-source-linux-distribution-logo-color-tal-revivo"/>
+      
+      <li id="barra05">
+        <img width="75" height="75" src="https://img.icons8.com/color/96/ubuntu--v1.png" alt="ubuntu--v1"/>
       </li>
+
+
+      <li id="barra05">
+        <img width="96" height="96" src="https://img.icons8.com/color/96/google-cloud.png" alt="google-cloud"/>
+      </li>
+    </ul>
+    
     </ul>
   </section>
 
   <section id="projetos" class="projects">
-    <h2>PROYECTOS</h2>
+    <h2 id="principal2">PROYECTOS</h2><br>
     <div class="projects__container">
       <div class="projects__card">
-        <img class="card__cover" src="/piso3.jpg" alt="Capa Josi's Box">
+        <img class="card__cover" src="/image05.jpg" alt="Capa Josi's Box">
+        
         <div class="card__body">
-          <h3 class="card__title">Red Backbone</h3>
-          <p class="card__description">Metodologia</p>
+
+          <div>
+          <h3 class="card__title">Implementación de una Red Backbone</h3>
+
+          <h5 id="subt">Universidad de Huánuco  Abril de 2021 - Mayo de 2021</h5></div>
+          <p class="card__description">Objetivo</p>
           <ul class="card__list">
-            <li class="card__item">ANSI/TIA-568 </li>
-            <li class="card__item">CONEXION VERTICAL</li>
-            <li class="card__item">CONEXION CRUZADA</li>
+            <li class="card__item">La actualizacion de los puntos de red de los laboratorios </li>
+          </ul>
+          <p class="card__description">Fases de trabajo</p>
+          <ul class="card__list">
+            <li class="card__item">Planificaion de la estructura de la red</li>
+            <li class="card__item">Implementacion de un nuevo cableado "CAT-6"</li>
+            <li class="card__item">Implementacion de 50 puntos de red "JACK RJ45 CAT-6"</li>
+           
           </ul>
           
           <ul class="technologies__list">
@@ -163,17 +174,27 @@
             </li>
           </ul>
 
-
+            
         </div>
       </div>
       <div class="projects__card card--reverse">
-        <img class="card__cover" src="/clonar-disco.png" alt="Capa Archstil">
-        <div class="card__body">
-          <h3 class="card__title">SERVICIO TI</h3>
-          <p class="card__description">Gestión estratégica</p>
+        <img class="card__cover" src="/image04.jpg" alt="Capa Archstil">
+        <div class="card__body">+
+          <div >
+          <h3 class="card__title">Clonacion de Equipos Informaticos</h3>
+          <h5 id="subt">Universidad de Huánuco Noviembre de 2022 - Diciembre de 2022</h5></div>
+          
+          <p class="card__description">Objetivo</p>
           <ul class="card__list">
-            <li class="card__item">Seguridad</li>
-            <li class="card__item">Herramientas tecnologicas</li>    
+            <li class="card__item">Habilitar los equipos informatios en los laboratorios</li>
+          </ul> 
+          
+          <p class="card__description">Fases de trabajo</p>
+          <ul class="card__list"> 
+            <li class="about__item">Instalacion del Software</li>
+            <li class="about__item">Montaje del Hardware</li>
+            <li class="about__item">Clonacion del disco de almacenamiento</li>
+              
           </ul>
           <ul class="technologies__list">
             <li class="technologies__item">
@@ -194,8 +215,11 @@
       
       <a href="https://github.com/joseVidalG?tab=repositories">
         <button class="btn btn--primary">
-          <span>repositório</span>
+          <img width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="github"/>
+          <span>repositórios</span>
+          
           <i class="bi bi-arrow-up-right"></i>
+          
         </button>  
       </a>
     </div>
@@ -203,10 +227,10 @@
 
   <section id="sobre" class="about">
     <div class="about__content1">
-      <img class="about__photo" src="avatar" alt="">
+      <img class="about__photo" src="/Viaje.jpg" alt="">
       <div class="about__description">
         <h2>Sobre mi</h2>
-        <p>Jose Vidal. Especialista en cableado estructurado con más de 2 años de experiencia, configuración y mantenimiento de equipos de hardware y software, así como el manejo de sistemas operativos Windows y Linux (Ubuntu).
+        <p>Jose Vidal. Estudiante de 8° de ingenieria de sistemas e informatica con experiencia como especialista en redes estructuradas, desarrollador web, así como el uso de sistemas operativos Windows y Linux (Ubuntu).
           Durante mi trayectoria en el sector de las tecnologías de la información, he desarrollado las habilidades y conocimientos necesarios para llevar a cabo proyectos de infraestructura de TI de manera eficiente y eficaz.
         </p>  
         <div class="about__icons">
@@ -220,9 +244,9 @@
               <i class="bi bi-arrow-up-right"></i>
             </button> 
           </a>
-          <a href="">
+          <a href="https://drive.google.com/file/d/1oFq6udTAIU2ImwA-irTlfCXQX-Yo4cAN/view?usp=drive_link" target="_blank">
             <button class="btn">
-              <span>Currículo</span>
+              <span>VER currículum </span>
             </button>
           </a>
         </div>
@@ -251,56 +275,45 @@
           </span>
           <ul class="about__list">
             <li class="about__item">Inventariado de Equipos</li>
-            <li class="about__item">Clonaciones</li>
+           
             <li class="about__item">Mantenimiento de Software y Hardaware</li>
           </ul>
         </div>
       </div>
+
       <div class="col2">
-        <h3>Cursos</h3>
+        <h3>Certificados</h3>
         <div id="accordion">
-          <div class="accordion__item active">
-            <button class="accordion__header start">
-              <span>Versionamento de Código com Git e GitHub</span>
-              <i class="bi bi-caret-down-fill"></i>
-            </button>
-            <div class="accordion__body">
-              <p>
-                Digital Innovation One. Fev 2023. 2h.
-              </p>
-              <p>
-                O que é versionamento de código, Git e GitHub. Como instalar e configurar o Git em diferentes sistemas 
-                operacionais e como autenticar via Token e SSH. Como manusear repositórios, indo desde a criação e clonagem 
-                até o gerenciamento de branches, passando por todas as etapas de salvar, desfazer e sincronizar alterações 
-                com o repositório remoto. 
-              </p>
-            </div>
-          </div>
+        
+        
           <div class="accordion__item">
             <button class="accordion__header">
-              <span>Contribuindo em um Projeto Open Source no GitHub</span>
+              <span>Google</span>
               <i class="bi bi-caret-down-fill"></i>
             </button>
             <div class="accordion__body">
               <p>
-                Digital Innovation One. Fev 2023. 1h.
+               <div class="projects__card">
+                <img class="card__cover" src="/google01.png" alt="Capa Josi's Box">
+              </div>
+              <div class="card__body">
               </p>
               <p>
-                Lab prático sobre colaboração em projetos de código aberto.
+                
               </p>
             </div>
           </div>
           <div class="accordion__item">
             <button class="accordion__header end">
-              <span>Organizando seus Estudos com os Roadmaps DIO e o Notion</span>
+              <span></span>
               <i class="bi bi-caret-down-fill"></i>
             </button>
             <div class="accordion__body end">
               <p>
-                Digital Innovation One. Fev 2023. 2h.
+              
               </p>
               <p>
-                Otimização dos estudos com os Roadmaps DIO, construindo um caderno de estudos com a ferramenta Notion.
+                
               </p>
             </div>
           </div>
@@ -341,10 +354,10 @@
   <footer>
     <p>
       © 2024. HUÁNUCO-PERÚ
-      <a href="https://www.dio.me/" target="_blank">PORTAFOLIO DIGITAL HECHO</a> POR 
-      <a href="https://github.com/joseVidalG" target="_blank">JOSE VIDAL</a>.
+      <a href="https://github.com/joseVidalG" target="_blank"></a>.
     </p>
   </footer>
   <script src="assets/js/scripts.js"></script>
 </body>
 </html>
+      

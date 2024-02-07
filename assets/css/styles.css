@@ -49,10 +49,25 @@ html[data-theme='light'] .technologies__logo {
 }
 
 body {
-  background: var(--primary-bg-color);
-  font-family:'Inter', Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--text-color);
+  background: var(--primary-bg-color); /* Color de fondo */
+  font-family: 'Inter', sans-serif; /* Tipo de fuente */
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: normal; /* Peso de la fuente */
+  color: var(--text-color); /* Color del texto */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ::-webkit-scrollbar {
   width: 0.5rem;
@@ -128,16 +143,35 @@ p {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   z-index: 2;
+
+ 
 }
 
+#barra{
+  background-image: url("/blue-vortex-3d_3840x2160_xtrafondos.com.jpg");
+  background-size: cover; /* Ancho 300px, Alto 200px */
+  background-position: center; /* Centra la imagen */
+  
+}
+.header {
+  border: 2px solid #000; /* Borde sólido de 2px de grosor */
+  border-bottom-left-radius: 50px; /* Esquinas redondeadas */
+  border-bottom-right-radius: 50px; /* Esquinas redondeadas */
+  box-shadow: 1px 1px 40px rgb(255, 255, 255); /* Sombra */
+}
+
+
+
 .header__toggle {
+  
   display: flex;
   justify-content: flex-end;
 }
 
 .header__brand .brand__logo {
+  
   width: 3.25rem;
   height: 3.25rem;
 }
@@ -152,7 +186,7 @@ p {
 .menu {
   display: flex;
   align-items: center;
-  background: var(--primary-bg-color);
+  
 }
 
 .menu__item {
@@ -195,7 +229,7 @@ p {
 }
 
 .menu__icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .menu__text {
@@ -203,10 +237,10 @@ p {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
-  background: linear-gradient(to right, #ffcc00, #ff6600);
+  background: linear-gradient(to right, #ffffff, 10%,#0c4ba8,30%,#0059ff,60%,#00b7ff);
   -webkit-background-clip: text;
   color: transparent;
-  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.322);
+ 
 
 }
 
@@ -308,6 +342,7 @@ main {
   display: flex;
   flex-flow: row wrap;
   gap: .5rem;
+   padding: 1rem 1.25rem;
 }
 
 .technologies__item {
@@ -349,6 +384,7 @@ main {
   border-radius: 0.5rem;
   object-fit: cover;
   object-position: center;
+  box-shadow: 14px 14px 20px rgb(0, 0, 0); /* Sombra */
 }
 
 .card__body {
@@ -387,6 +423,9 @@ main {
 
 .card__body .technologies__list {
   gap: .75rem;
+  position: relative;
+  
+
 }
 
 .card__body .technologies__item {
@@ -588,6 +627,8 @@ footer p {
     align-items: flex-start;
   }
 
+  
+
   .technologies {
     padding: 6.25rem 6rem 2rem 6rem;
     margin-top: -6rem;
@@ -758,7 +799,7 @@ footer p {
   font-family: monospace;
   color: black;
   line-height: 1.4em;
-  height: 1.3em;
+  
   padding: 0 14px 0 2px;
   display: inline-block;
   vertical-align: middle;
@@ -766,8 +807,20 @@ footer p {
   font-weight: 700 ;
 }
 
+
+.word {
+  display: inline-block;
+  height: 40px; /* Establece un alto fijo para el span */
+  overflow: hidden; /* Oculta cualquier contenido que exceda el alto especificado */
+  vertical-align: middle; /* Alinea verticalmente el span con otros elementos */
+}
+
+
+
+
+
 .word:before {
-  content: '';
+  content: attr(align-items);
   background-color: rgb(255, 255, 255);
   width: 3px;
   position: absolute;
@@ -833,4 +886,127 @@ footer p {
 	-webkit-text-stroke: 1px #ffffff;
 	text-shadow: 0px 10px 15px #000000;
   
+}
+
+.card__title {
+  margin-bottom: 0.3px; /* Ajusta el margen inferior del elemento h3 */
+}
+#subt{
+  margin-bottom: 1px; 
+}
+
+
+/*****************/
+
+#barra02, #barra03, #barra04, #barra05, #barra06 {
+  position: relative;
+  list-style: none;
+ 
+}
+
+#barra02::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 75px; 
+  height: 4px; 
+  background: linear-gradient(to right, #af4406,#39af02,80%, #18d311,60%,#000000 );
+  
+  border-radius: 100px; 
+}
+
+
+#barra03::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%; 
+  transform: translateX(-50%);
+  width: 75px; 
+  height: 4px; 
+  background: linear-gradient(to right, #af4406,#39af02,80%, #18d311,60%,#000000 );
+  
+  border-radius: 100px; 
+}
+
+#barra03::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 75px; 
+  height: 4px;
+  background: linear-gradient(to right, #af4406,#39af02,80%, #18d311,60%,#000000 );
+  
+  border-radius: 100px;
+}
+
+#barra04::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 75px; 
+  height: 4px; 
+  background: linear-gradient(to right, #af4406,#39af02,80%, #18d311,60%,#000000 );
+  
+  border-radius: 100px;
+}
+
+#barra05::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%; 
+  transform: translateX(-50%);
+  width: 75px; 
+  height: 4px; 
+  background: linear-gradient(to right, #af4406,#39af02,80%, #18d311,60%,#000000 );
+  border-radius: 100px; 
+  
+}
+
+#barra06::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 75px; 
+  height: 4px; 
+  background: linear-gradient(to right, #af4406,#39af02,90%, #18d311,60%,#000000 );
+  border-radius: 100px;
+  
+}
+
+
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.btn span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn i {
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn:hover {
+  background-color: #ff6600; /* Cambia el color al pasar el cursor */
 }
