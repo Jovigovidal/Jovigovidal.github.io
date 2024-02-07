@@ -461,7 +461,7 @@ main {
   object-fit: cover;
   object-position: center;
   pointer-events: none;
-  border-radius: 50rem;
+  border-radius: 40rem;
   border: 1px solid var(--primary-border-color);
 }
 
